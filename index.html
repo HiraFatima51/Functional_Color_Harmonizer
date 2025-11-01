@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Functional Color Harmonizer</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Functional Color Harmonizer</h1>
+    <p>
+      Pick a base color (hex) and see the complementary and triadic colors instantly.
+      This app uses <b>pure functional JavaScript</b> — no classes or prototypes.
+    </p>
+
+    <div class="controls">
+      <div class="field">
+        <label for="colorPicker">Color Picker</label>
+        <input id="colorPicker" type="color" value="#1f8fff" />
+      </div>
+
+      <div class="field">
+        <label for="hexInput">Hex Input</label>
+        <input id="hexInput" type="text" value="#1f8fff" maxlength="7" />
+      </div>
+
+      <div class="field">
+        <label>&nbsp;</label>
+        <button id="applyBtn" type="button">Apply</button>
+      </div>
+    </div>
+
+    <div id="error" class="error" style="display:none;"></div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="label">Base</div>
+        <div class="color-swatch" id="baseSwatch"></div>
+        <div class="meta" id="baseMeta"></div>
+      </div>
+
+      <div class="card">
+        <div class="label">Complementary</div>
+        <div class="color-swatch" id="compSwatch"></div>
+        <div class="meta" id="compMeta"></div>
+      </div>
+
+      <div class="card">
+        <div class="label">Triadic 1</div>
+        <div class="color-swatch" id="tri1Swatch"></div>
+        <div class="meta" id="tri1Meta"></div>
+      </div>
+
+      <div class="card">
+        <div class="label">Triadic 2</div>
+        <div class="color-swatch" id="tri2Swatch"></div>
+        <div class="meta" id="tri2Meta"></div>
+      </div>
+    </div>
+
+    <p class="note">
+      Input must be a six-digit hex code like <code>#1F8FFF</code>.
+    </p>
+  </div>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
+</body>
+</html>
