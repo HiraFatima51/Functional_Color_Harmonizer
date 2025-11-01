@@ -44,6 +44,6 @@ script.js
 <h2>📸 Preview</h2>
 
 <p align="center">
-  <img src="screenshot.png" width="600" alt="App Preview">
+  <img src="App.PNG" width="600" alt="App Preview">
 </p>
 
