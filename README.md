@@ -1,19 +1,49 @@
 # Functional_Color_Harmonizer
 A single-page JavaScript web app that dynamically calculates and displays color harmonies — including complementary and triadic colors — for any base color selected by the user.
+<h1 align="center">🎨 Functional Color Harmonizer</h1>
 
-This project follows a purely functional programming approach, using immutable helper functions for all color conversions and logic.
-Only the updateColors() function interacts with the DOM for synchronization.
+<p align="center">
+A <b>functional JavaScript</b> color harmony generator that calculates <b>complementary</b> and <b>triadic</b> colors instantly.
+</p>
 
-Key Features:
+---
 
-🎨 Real-time color harmony visualization
-🧩 Functional JavaScript (no classes or prototypes)
-⚙️ Converts HEX → HSL and back to CSS color format
-🔄 Automatically updates color panels and labels
+<h2>🚀 Features</h2>
 
-Core Functions:
+<ul>
+  <li>Real-time color harmony visualization</li>
+  <li>Purely functional JavaScript (no classes or prototypes)</li>
+  <li>Converts HEX → HSL → CSS color format</li>
+  <li>Automatic DOM synchronization</li>
+</ul>
 
-hexToHsl(hex) → Converts HEX to HSL
-calculateHarmonies(baseHsl) → Computes complementary + triadic colors
-hslToCss(hsl) → Formats HSL into CSS-compatible string
-updateColors() → Syncs UI with computed values
+---
+
+<h2>🧩 Core Functions</h2>
+
+<table>
+  <tr><th>Function</th><th>Description</th></tr>
+  <tr><td><code>hexToHsl(hex)</code></td><td>Converts HEX to HSL</td></tr>
+  <tr><td><code>calculateHarmonies(baseHsl)</code></td><td>Computes complementary + triadic colors</td></tr>
+  <tr><td><code>hslToCss(hsl)</code></td><td>Formats HSL into CSS-compatible string</td></tr>
+  <tr><td><code>updateColors()</code></td><td>Updates the DOM with calculated colors</td></tr>
+</table>
+
+---
+
+<h2>📂 File Structure</h2>
+
+<pre>
+index.html
+style.css
+script.js
+</pre>
+
+---
+
+<h2>📸 Preview</h2>
+
+<p align="center">
+  <img src="screenshot.png" width="600" alt="App Preview">
+</p>
+
